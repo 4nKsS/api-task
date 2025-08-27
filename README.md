@@ -5,22 +5,20 @@ A API permite gerenciar tarefas com operações de criação, listagem, atualiza
 ---
 
 ## Exemplo de corpo (JSON)
-- **id**: (integer) Indentificador único da tarefa (gerado automaticamente).  
+- **id**: (Integer) Identificador único da tarefa (gerado automaticamente).  
 
- - **nome**: (localDate) O nome da tarefa.
+ - **nome**: (String) O nome da tarefa.
 
- - **dataEntrega**: (string) Data para entregar a tarefa.
+ - **dataEntrega**: (LocalDate) Data de entrega da tarefa.
 
- - **responsavel**: (string) Pessoa responsavel pela tarefa.
+ - **responsavel**: (String) Pessoa responsável pela tarefa.
 
 ```json
-[
-  {
+{
     "nome": "Estudar",
     "dataEntrega": "dd/mm/aaaa",
     "responsavel": "Pedro"
-  }
-]
+}
 ```
 
 ## Adicionar Tarefa
